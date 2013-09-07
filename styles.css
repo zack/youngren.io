@@ -46,7 +46,8 @@ html, body {
     text-align: center;
 }
 
-a[href^="mailto:"]
+a
 {
-    text-decoration:none
+    text-decoration:none;
+    color: blue;
 }
