@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS3 Document */
+
+html, body {
+	font-family : "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+}
+
+#content{
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px #888888;
+    margin: 150px auto;
+    background-color: white;
+    width:214px;
+}
+
+#face{
+    text-align: right;
+    line-height:.9em;
+    color: grey;
+    font-size: .5em;
+    margin: 2px 2px 2px 2px;
+    width: 210px;
+    height: 210px;
+    padding-bottom: 10px;
+}    
+
+#name{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#info{
+    line-height: 1.3em;
+    font-size: .75em;
+    padding: 10px 0px 14px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    line-height: 1.3em;
+    font-size: .6em;
+    padding: 0px 0px 3px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a[href^="mailto:"]
+{
+    text-decoration:none
+}
