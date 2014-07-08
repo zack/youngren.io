@@ -19,6 +19,10 @@ module.exports = function(grunt) {
         files: 'src/images/*',
         tasks: 'copy:images'
       },
+      images: {
+        files: 'src/data/*',
+        tasks: 'copy:data'
+      },
       lib: {
         files: 'src/lib/**/*',
         tasks: 'copy'
@@ -58,6 +62,13 @@ module.exports = function(grunt) {
         cwd: 'src/images',
         src: ['**/*.png'],
         dest: 'public_html/images'
+      },
+      data: {
+        expand: true,
+        flatten: false,
+        cwd: 'src/data',
+        src: ['**/*'],
+        dest: 'public_html/data'
       },
       libjs: {
         expand: true,

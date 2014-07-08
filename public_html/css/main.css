@@ -6,6 +6,22 @@ a {
   text-decoration: none;
   color: blue;
 }
+#charts {
+  text-align: center;
+}
+#charts #header {
+  margin-bottom: 45px;
+}
+#charts #header h1 {
+  margin-bottom: 0;
+}
+#charts #header p#wftda-subheader {
+  text-align: center;
+  margin: 0;
+}
+#charts .chart-title {
+  font-size: 1.2em;
+}
 #content {
   position: absolute;
   left: 50%;
