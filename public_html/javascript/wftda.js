@@ -16,10 +16,8 @@
   generate_charts = (function(_this) {
     return function(data) {
       var apprentices, chart, members;
-      members = data['Members']['Chars'];
-      apprentices = data['Apprentices']['Chars'];
-      members.unshift('Members');
-      apprentices.unshift('Apprentices');
+      members = ['Member League Skaters', 0].concat(data['Members']['Chars']);
+      apprentices = ['Apprentice League Skaters', 0].concat(data['Apprentices']['Chars']);
       chart = c3.generate({
         bindto: '#chart-characters',
         size: {
@@ -49,7 +47,9 @@
             label: {
               text: 'Number of Characters',
               position: 'outer-center'
-            }
+            },
+            min: 1,
+            max: 4
           },
           y: {
             label: {
@@ -62,10 +62,8 @@
           pattern: ['pink', '#DDD']
         }
       });
-      members = data['Members']['Syllables'];
-      apprentices = data['Apprentices']['Syllables'];
-      members.unshift('Members');
-      apprentices.unshift('Apprentices');
+      members = ['Members League Skaters'].concat(data['Members']['Syllables']);
+      apprentices = ['Apprentice League Skaters'].concat(data['Apprentices']['Syllables']);
       return chart = c3.generate({
         bindto: '#chart-syllables',
         size: {
@@ -95,7 +93,9 @@
             label: {
               text: 'Number of Syllables',
               position: 'outer-center'
-            }
+            },
+            min: 1,
+            max: 11
           },
           y: {
             label: {
