@@ -57,9 +57,6 @@
               position: 'outer-middle'
             }
           }
-        },
-        color: {
-          pattern: ['pink', '#DDD']
         }
       });
       members = ['Members League Skaters'].concat(data['Members']['Syllables']);
@@ -94,6 +91,11 @@
               text: 'Number of Syllables',
               position: 'outer-center'
             },
+            tick: {
+              culling: {
+                max: 1
+              }
+            },
             min: 1,
             max: 11
           },
@@ -103,9 +105,6 @@
               position: 'outer-middle'
             }
           }
-        },
-        color: {
-          pattern: ['pink', '#DDD']
         }
       });
     };

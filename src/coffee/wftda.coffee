@@ -46,9 +46,6 @@ generate_charts = (data) =>
           position: 'outer-middle'
         }
       }
-    },
-    color: {
-      pattern: ['pink', '#DDD']
     }
   })
 
@@ -82,6 +79,11 @@ generate_charts = (data) =>
           text: 'Number of Syllables',
           position: 'outer-center'
         },
+        tick: {
+          culling: {
+            max: 1
+          }
+        },
         min: 1,
         max: 11
       },
@@ -91,9 +93,6 @@ generate_charts = (data) =>
           position: 'outer-middle'
         }
       }
-    },
-    color: {
-      pattern: ['pink', '#DDD']
     }
   })
 
