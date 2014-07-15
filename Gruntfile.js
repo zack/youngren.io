@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         files: 'src/images/*',
         tasks: 'copy:images'
       },
-      images: {
+      data: {
         files: 'src/data/*',
         tasks: 'copy:data'
       },
