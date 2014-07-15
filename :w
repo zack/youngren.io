@@ -1,0 +1,8 @@
+start = () =>
+
+$.ajax({
+  url: '/data/skater_data',
+  success: (data) =>
+})
+
+start()

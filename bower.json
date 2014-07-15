@@ -1,6 +1,7 @@
 {
   "name": "youngren.io",
   "dependencies": {
+    "jquery": null,
     "c3": null
   }
 }
