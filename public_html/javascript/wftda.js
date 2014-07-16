@@ -125,6 +125,16 @@
             ratio: 1
           }
         },
+        tooltip: {
+          format: {
+            title: function(d) {
+              return d + ' Character(s)';
+            },
+            value: function(v) {
+              return v + '%';
+            }
+          }
+        },
         axis: {
           x: {
             label: {
@@ -138,6 +148,12 @@
             label: {
               text: 'Percentage of Skaters',
               position: 'outer-middle'
+            },
+            min: 0,
+            max: 100,
+            padding: {
+              top: 0,
+              bottom: 0
             }
           }
         },

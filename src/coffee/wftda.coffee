@@ -135,12 +135,12 @@ generate_charts = (data) =>
         ratio: 1
       }
     },
-    #tooltip: {
-      #format: {
-        #title: (d) -> d + ' Syllable(s)',
-        #value: (v) -> v + '%'
-      #}
-    #},
+    tooltip: {
+      format: {
+        title: (d) -> d + ' Character(s)',
+        value: (v) -> v + '%'
+      }
+    },
     axis: {
       x: {
         label: {
@@ -154,7 +154,10 @@ generate_charts = (data) =>
         label: {
           text: 'Percentage of Skaters',
           position: 'outer-middle'
-        }
+        },
+        min: 0,
+        max: 100,
+        padding: {top: 0, bottom: 0}
       }
     },
     color: {
