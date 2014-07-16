@@ -22,6 +22,9 @@ a {
 #charts .chart-title {
   font-size: 1.2em;
 }
+#charts .chart table.c3-tooltip .name {
+  text-align: left;
+}
 #charts hr {
   margin: 20px auto;
   border: 0;
