@@ -139,7 +139,8 @@ generate_charts = (data) =>
       format: {
         title: (d) -> d + ' Character(s)',
         value: (v) -> v + '%'
-      }
+      },
+      #grouped: false
     },
     axis: {
       x: {
