@@ -98,7 +98,6 @@ generate_charts = (data) =>
 
   members = data['Members']['Letters']
   apprentices = data['Apprentices']['Letters']
-  console.log members
 
   chart = c3.generate({
     bindto: '#chart-letters',
