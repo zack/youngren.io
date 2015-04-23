@@ -2,4 +2,6 @@
 *.pdf
 *.swp
 *.log
+*.swo
 public_html
+node_modules
